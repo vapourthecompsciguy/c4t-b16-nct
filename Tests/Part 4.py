@@ -10,3 +10,19 @@ if ("@" in email) and (len(email) > 8):
 else:
     print("Email inappropriate")
 
+isDone = True
+
+while isDone:
+    email = input("Enter your email: ")
+    user = input("Enter your username: ")
+    password = input("Enter your password: ")
+    repassword = input("Reenter password: ")
+
+    if ("@" in email) and (len(password) >= 8):
+        if (repassword == password):
+            print("Sign up success")
+            isDone = False
+        else:
+            print("Wrong password")
+    else:
+        print("Password need to have atleast 8 Character"
